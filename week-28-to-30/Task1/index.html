@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinment 28-30</title>
+    <style>
+        input,textarea{
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Task 1 -->
+    <form  action="" method="get">
+        <label >Name</label>
+        <input type="text" maxlength="20" minlength="5" required>
+        <label >Email</label>
+        <input type="email" value="o@o.com" readonly>
+        <label >Token</label>
+        <input type="text" value="b92f1fc2fce391ad7af633723afd3055" hidden>
+        <input type="submit">
+        <input type="reset">
+
+        <!-- Task 2 -->
+        <input type="checkbox" id="Planning" value="Planning" style="display: inline;">
+        <label for="Planning">Planning</label>
+        <br>
+        <input type="checkbox" id="Analysis" value="Analysis" style="display: inline;">
+        <label for="Analysis">Analysis</label>
+        <br>
+        <input type="c" id="Problem Solving" value="Problem Solving" style="display: inline;">
+        <label for="Problem Solving">Problem Solving</label>
+        <br>
+        <input type="checkbox" id="Advanced Search" value="Advanced Search" style="display: inline;">
+        <label for="Advanced Search">Advanced Search</label>
+        <br>
+
+        <label style="display: block; font-weight: bolder; font-size: 30px;">Skills</label>
+        <input type="radio" id="Scrum-Master" name="skills" style="display: inline;">
+        <label for="Scrum-Master">Scrum Master</label>
+        <br>
+        <input type="radio" id="Business-Analyst" name="skills" style="display: inline;" checked>
+        <label for="Business-Analyst">Business Analyst</label>
+        <br>
+        <input type="radio" id="Project-Manager" name="skills" style="display: inline;">
+        <label for="Project-Manager">Project Manager</label>
+        <br>
+
+        <label style="display: block; font-weight: bolder; font-size: 30px;">job</label>
+        <input type="radio" id="Back-End Developer" name="job" style="display: inline;">
+        <label for="Back-End Developer">Back-End Developer</label>
+        <br>
+        <input type="radio" id="Front-End Developer" name="job" style="display: inline;">
+        <label for="Front-End Developer">Front-End Developer</label>
+        <br>
+        <input type="radio" id="full-stack Developer" name="job" style="display: inline;" checked>
+        <label for="full-stack Developer">full-stack Developer</label>
+        <br>
+
+        <!-- Task 3 -->
+        <label for="book">Choose Book:</label>
+        <select name="book">
+            <optgroup label="PHP">
+                <option value="v5.0">v5.0</option>
+                <option value="v7.0">v7.0</option>
+                <option value="v8.0">v8.0</option>
+            </optgroup>
+            <optgroup label="Python">
+                <option value="v2.0">v5.0</option>
+                <option value="v3.0">v7.0</option>
+                <option value="v3.9">v8.0</option>
+            </optgroup>
+            <textarea name="brief" placeholder="Write Here Why You Want To Learn Programming" cols="30" rows="10"></textarea>
+        </select>
+    </form>
+</body>
+</html>
